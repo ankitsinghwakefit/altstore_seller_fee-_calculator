@@ -1,0 +1,204 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ----------------------------------  my css ---------------------------------- */
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Myriad Pro", Myriad, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+body {
+    background-color: rgb(248, 212, 171);
+    
+}
+.header {
+    background-color: rgb(247, 212, 146);
+    box-shadow: 0px 8px 13px 0px wheat;}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+}
+.links {
+    /* align-items: center;
+    align-content: center; */
+    align-self: center;
+}
+.links a {
+    padding-right: 3rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+.logo {
+    width: 20%;
+    height: 100%;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ------------------------------ body ------- */
+
+.body_container{
+    text-align: center;
+    margin: 5rem 0;
+}
+h1 {
+    color: #F66346;
+    font-size: 3rem;
+    font-weight: 700;
+    word-spacing: .7rem;
+    letter-spacing: .1rem;
+}
+.body_container_para {
+    font-size: 1.6rem;
+    letter-spacing: .07rem;
+    word-spacing: .2rem;
+    color: rgb(59, 58, 58);
+}
+
+/* --------------------------------- calculator box -------------------------- */
+
+
+.calculator_box {
+    line-height: 3rem;
+    margin: 5rem 0;
+}
+.calc_para {
+    font-size: 1.4rem;
+    /* padding-left: 2rem; */
+    display: inline-block;
+    width: 100%;
+}
+.sp {
+    display: inline-block;
+    padding-left: 8.5rem;
+}
+.profitspan {
+    display: inline-block;
+    padding-left: 13rem;
+}
+.gstspan {
+    display: inline-block;
+    padding-left: 8.5rem;
+}
+.categspan {
+    display: inline-block;
+    padding-left: 4.2rem;
+}
+.packagespan {
+    display: inline-block;
+    padding-left: 2.2rem;
+}
+input {
+    /* padding:1rem; */
+    font-size: 1.5rem;
+}
+.btn {
+    width: 11rem;
+    height: 2.5rem;
+    margin-left: 6rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-top: 2rem;
+    background-color: #F66346;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px 0px #E27D5E;
+}
+#final_earning {
+    font-size: 4rem;
+    /* color: #F66346; */
+    margin: 2rem 0;
+}
+.pink_text {
+    color: #F66346;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 1.2rem;
+    margin: 4rem 0;
+    /* box-shadow: 0px 6px 12px 0px #000000; */
+  }
+  
+   td, th{
+    border: 1px solid #000;
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+    background-color: rgb(250, 161, 144);
+  }
+  .tbold {
+      font-weight: 800;
+  }
+
+i{
+    font-size: 2rem;
+    padding-left: 1.5rem;
+}
+.flip {
+    color: #2974F0;
+}
+.snap {
+   color: #E53745;
+}
+.amaz {
+   color: #232F3F;
+}
+.payt {
+   color: rgb(32, 197, 251);
+}
+.shop {
+   color: rgb(31, 171, 192);
+}
+

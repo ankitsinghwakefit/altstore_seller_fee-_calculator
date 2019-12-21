@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AltStore | Calculator</title>
+    <link rel="stylesheet" href="assets/stylesheet/style.css">
+    <script src="https://kit.fontawesome.com/f04dd70b3c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav_container">
+                <div class="logo">
+                    <img src="assets/media/logo.jpg" alt="logo">
+                </div>
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#">Software</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">resource</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="body">
+            <div class="container">
+                <div class="body_container">
+                    <h1>Ecommerce Seller Fees Calculator</h1>
+                    <p class="body_container_para">Find out how much you can earn by selling 
+                        on top marketplaces!</p>
+                </div>
+                <div class="calculator_box">
+                     <p class="pink_text calc_para">Selling Price <span class="sp"><input type="number" id="s_price" class="pink_text input_mrp"></span></p>
+
+                    <p class="pink_text calc_para">Profit <span class="profitspan"><input type="number" id="profit" class="pink_text input_s_price"></span></p>
+
+                    <p class="calc_para">Enter GST% <span class="gstspan"><input type="number" id="gst" class="input_gst"></span></p>
+
+                    <p class="calc_para">Choose a Category <span class="categspan"><input type="text" placeholder="Home Appliances"></span></p>
+
+                    <p class="calc_para">Choose Package Type <span class="packagespan"><input type="text" placeholder="<250gms| 20cm*22cm*3cm" class="pink_text mrp"></span></p>
+
+                    <button onclick="commissionCalculator()" class="btn">Calculate</button>
+
+                    <p id="final_earning"></p>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <table>
+                <tr>
+                  <th></th>
+                  <th><i class="fas fa-shopping-cart flip"></i><br>Flipkart</th>
+                  <th><i class="fab fa-snapchat-ghost snap"></i><br>Snapdeal</th>
+                  <th><i class="fab fa-amazon amaz"></i><br>Amazon</th>
+                  <th><i class="fab fa-cc-amazon-pay payt"></i><br>Paytm</th>
+                  <th><i class="fas fa-shopping-bag shop"></i><br>Shopclues</th>
+                </tr>
+                <tr>
+                  <td>Selling Price</td>
+                  <td>1000</td>
+                  <td>1000</td>
+                  <td>1000</td>
+                  <td>1000</td>
+                  <td>1000</td>
+                </tr>
+                <tr>
+                  <td>Marketplace Commission</td>
+                  <td>-50 (5%)</td>
+                  <td>-40 (4%)</td>
+                  <td>-50 (5%)</td>
+                  <td>-70 (7%)</td>
+                  <td>-40 (4%)</td>
+                </tr>
+                <tr>
+                  <td>GST on Commission</td>
+                  <td>-7</td>
+                  <td>-9</td>
+                  <td>-9</td>
+                  <td>-13</td>
+                  <td>-7</td>
+                </tr>
+                <tr>
+                  <td>Marketplace Payment Fee</td>
+                  <td>-10</td>
+                  <td>-32 (3.2%)</td>
+                  <td>-10</td>
+                  <td>-30 (3.03%)</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                    <td>Net In Hand%</td>
+                    <td>72%</td>
+                    <td>74%</td>
+                    <td>68%</td>
+                    <td>75%</td>
+                    <td>70%</td>
+                  </tr>
+                <tr>
+                  <td class="pink_text tbold">Net in Hand*</td>
+                  <td class="pink_text tbold">₹ 721</td class="pink_text">
+                  <td class="pink_text tbold">₹ 712</td class="pink_text">
+                  <td class="pink_text tbold">₹ 736</td class="pink_text">
+                  <td class="pink_text tbold">₹ 684</td class="pink_text">
+                  <td class="pink_text tbold">₹ 750</td class="pink_text">
+                </tr>
+              </table>
+        </section>
+    </main>
+    <script src="index.js">
+    </script>
+    </body>
+</html>
